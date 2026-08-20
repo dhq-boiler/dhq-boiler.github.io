@@ -428,7 +428,8 @@ footer .socials { display: flex; justify-content: center; gap: 20px; margin-bott
     <div class="about-text">
       <p>C#/WPF による Windows デスクトップアプリ開発を 8 年以上、個人でも業務でも継続しています。</p>
       <p>近年は Visual Studio や Claude Code などの開発者ツール × 生成AI 連携（Model Context Protocol / エージェント統合）にも軸を広げており、
-        自作の VS 拡張 MCP サーバー <a href="#u-vs-mcp">Unofficial VS MCP</a> は Visual Studio Marketplace で累計 1,000+ install、★5.0 を獲得しています。</p>
+        自作の VS 拡張 MCP サーバー <a href="#u-vs-mcp">Unofficial VS MCP</a> は Visual Studio Marketplace で累計 1,000+ install、★5.0 を獲得しています。
+        AI 協調型の UML クラス図エディタ <a href="#kata">Kata</a>（Roslyn + 自作 C++/CLI パーサー、Fowler リファクタリング／コードスメル、Claude / Codex 連携）も v1.0 をリリース済み。</p>
       <p>Microsoft Store では
         <a href="#stream-director">STREAM DIRECTOR</a>、
         <a href="#boilers-graphics">boiler's Graphics</a>、
@@ -570,6 +571,35 @@ footer .socials { display: flex; justify-content: center; gap: 20px; margin-bott
       </div>
     </article>
 
+    <article class="card featured" id="kata">
+      <div class="cover">
+        <img src="https://kata.dhq-boiler.dev/assets/kata-diagram.png" alt="Kata クラス図エディタ" loading="lazy" />
+      </div>
+      <div class="head">
+        <h3>Kata</h3>
+        <div class="subtitle">実コードと同期する AI 協働 UML クラス図エディタ</div>
+      </div>
+      <div class="tags">
+        <span class="tag oss">Community · PolyForm Noncommercial</span>
+        <span class="tag commercial">Pro · Commercial</span>
+        <span class="tag">C#/WPF</span>
+        <span class="tag">Roslyn</span>
+        <span class="tag">MSAGL</span>
+      </div>
+      <div class="metrics">
+        <span class="metric">v<strong>1.0.0</strong> リリース済み</span>
+        <span class="metric"><strong>4 言語</strong> 対応</span>
+        <span class="metric"><strong>30+</strong> refactorings</span>
+        <span class="metric"><strong>24</strong> code smells</span>
+      </div>
+      <p>"UML class diagrams that <em>are</em> the code" をコンセプトに、<code>.sln</code> / <code>.slnx</code> から C# / C++/CLI / Java / TypeScript のクラス図を自動生成する AI 協働型ドローイングツール。Roslyn と自作 C++/CLI パーサーのハイブリッド解析、MSAGL による Sugiyama レイアウト、Fowler カタログ準拠の 30+ リファクタリングと 24 種コードスメル検出（💩 バッジ表示）、Claude Code / Codex CLI と連携した AI diff プレビュー適用に対応。C# ↔ C++/CLI のクロス言語 Ctrl+Click ナビゲーション搭載。Community 版 / Pro 版の 2 ライセンス構成。</p>
+      <div class="links">
+        <a class="link-btn" href="https://kata.dhq-boiler.dev/" target="_blank" rel="noopener">Website ↗</a>
+        <a class="link-btn" href="https://github.com/dhq-boiler/Kata" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="link-btn" href="https://github.com/dhq-boiler/Kata/releases" target="_blank" rel="noopener">Releases ↗</a>
+      </div>
+    </article>
+
     <article class="card featured" id="paperplane">
       <div class="cover">
         <img src="https://paperplane.dhq-boiler.dev/screenshots/threadgraph.en.png" alt="PaperPlane 会話ツリー UI" loading="lazy" />
@@ -707,6 +737,10 @@ footer .socials { display: flex; justify-content: center; gap: 20px; margin-bott
   <h2><span class="num">04</span> Tech Articles</h2>
   <p class="section-desc">Zenn での技術発信。うち 3 本は所属企業ラグザイアの Publication 寄稿。</p>
   <ul class="article-list">
+    <li>
+      <span class="meta">2026-08 · Zenn · 約 6,500 字</span>
+      <a class="title" href="https://zenn.dev/dhq_boiler/articles/9e9bda0c2d5dfd" target="_blank" rel="noopener">UML クラス図に 💩 を付けたかっただけだった —— AI 協調型リファクタリングエディタ『Kata』を作った</a>
+    </li>
     <li>
       <span class="meta">2026-07 · Zenn · 8,500 字</span>
       <a class="title" href="https://zenn.dev/dhq_boiler/articles/da20f951623e81" target="_blank" rel="noopener">MCP プロトコルを正しく理解しましょう</a>
